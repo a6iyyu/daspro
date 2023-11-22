@@ -1,0 +1,9 @@
+#Ignoring modules
+SQLite/
+
+# Ignoring files
+*.pdf
+*.csv
+*.sqlite
+*.sql
+*.db
