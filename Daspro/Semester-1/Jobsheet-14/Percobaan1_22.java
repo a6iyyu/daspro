@@ -6,7 +6,7 @@ public class Percobaan1_22 {
             return (n * faktorial_rekursif(n - 1));
         }
     }
-    static int faktorialIteratif(int n) {
+    static int faktorial_iteratif(int n) {
         int faktor = 1;
         for (int i = n; i >= 1; i--) {
             faktor = faktor * i;
@@ -15,6 +15,6 @@ public class Percobaan1_22 {
     }
     public static void main(String[] args) throws Exception {
         System.out.println(faktorial_rekursif(5));
-        System.out.println(faktorialIteratif(5));
+        System.out.println(faktorial_iteratif(5));
     }
 }
