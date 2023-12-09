@@ -4,7 +4,6 @@ public class Segitiga22 {
         try (Scanner luas = new Scanner(System.in)) {
             int alas, tinggi;
             float hasil;
-
             System.out.print("Masukkan tinggi: ");
             tinggi = luas.nextInt();
             System.out.print("Masukkan alas: ");

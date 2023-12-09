@@ -1,19 +1,15 @@
 import java.util.Scanner;
-
 public class PemilihanPercobaan222 {
     public static void main(String[] args) {
         Scanner input22 = new Scanner(System.in);
-        float uas, uts, kuis, tugas;
-
         System.out.print("Nilai UAS\t: ");
-        uas = input22.nextFloat();
+        float uas = input22.nextFloat();
         System.out.print("Nilai UTS\t: ");
-        uts = input22.nextFloat();
+        float uts = input22.nextFloat();
         System.out.print("Nilai Kuis\t: ");
-        kuis = input22.nextFloat();
+        float kuis = input22.nextFloat();
         System.out.print("Nilai Tugas\t: ");
-        tugas = input22.nextFloat();
-
+        float tugas = input22.nextFloat();
         float total = (uas * 0.4F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
         if (total > 80) {
             char nilai_huruf = 'A';

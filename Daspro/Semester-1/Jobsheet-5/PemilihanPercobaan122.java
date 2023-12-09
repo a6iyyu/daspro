@@ -4,7 +4,6 @@ public class PemilihanPercobaan122 {
         try (Scanner input22 = new Scanner(System.in)) {
             System.out.print("Masukkan angka: ");
             int angka = input22.nextInt();
-
             String output = (angka % 2 == 0) ? "Angka " + angka + " bilangan genap." : "Angka " + angka + " bilangan ganjil.";
             System.out.println(output);
         }

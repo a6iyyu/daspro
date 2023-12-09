@@ -4,13 +4,11 @@ public class Ketti {
     public static void main(String[] args) {
         try (Scanner input = new Scanner(System.in)) {
             System.out.println("SELAMAT DATANG DI KETTI");
-            System.out.print("Masukkan nama Anda: ");
+            System.out.print("Masukkan nama Anda (sesuai KTP): ");
             String name = input.nextLine();
 
             if (charChecker(name)) {
                 System.out.println("Error: Nama tidak boleh memuat angka!");
-            } else if (name.length() > 20) {
-                System.out.println("Error: Nama tidak boleh melebihi dari 20 karakter!");
             } else {
                 System.out.println("Hai " + name + ", senang berjumpa denganmu!");
 

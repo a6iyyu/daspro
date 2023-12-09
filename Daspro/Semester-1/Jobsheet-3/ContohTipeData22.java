@@ -7,7 +7,6 @@ public class ContohTipeData22 {
         double berat = 0.5467812345;
         long saldo = 150000000;
         int angka_desimal = 0x10;
-
         System.out.println("Golongan darah\t\t\t: " + (byte) golongan_darah);
         System.out.println("Jarak\t\t\t\t: " + jarak);
         System.out.println("Jumlah penduduk dalam satu dusun: " + jumlah_penduduk_dalam_dusun);

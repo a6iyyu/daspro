@@ -9,7 +9,6 @@ public class Pemilihan2Percobaan222 {
             System.out.print("Sudut 3: ");
             int sudut_3 = input22.nextInt();
             int total_sudut = sudut_1 + sudut_2 +sudut_3;
-
             if (total_sudut == 180) {
                 if (sudut_1 == 90 || sudut_2 == 90 || sudut_3 == 90) {
                     System.out.println("Segitiga tersebut adalah segitiga siku-siku.");
