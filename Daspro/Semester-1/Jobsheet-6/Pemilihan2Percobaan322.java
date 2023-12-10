@@ -8,7 +8,6 @@ public class Pemilihan2Percobaan322 {
             String kategori = input22.nextLine();
             System.out.print("Masukkan besar penghasilan: ");
             int penghasilan =input22.nextInt();
-            
             if (kategori.equalsIgnoreCase("pekerja")) {
                 if (penghasilan <= 2000000)
                     pajak = 0.1;

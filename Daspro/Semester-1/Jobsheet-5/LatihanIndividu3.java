@@ -8,9 +8,7 @@ public class LatihanIndividu3 {
             double b = input.nextDouble();
             System.out.print("Masukkan nilai c: ");
             double c = input.nextDouble();
-
             double d = b * b - 4 * a * c;
-
             if (d >= 0) {
                 double akar_1 = (-b + Math.sqrt(d)) / (2 * a);
                 double akar_2 = (-b - Math.sqrt(d)) / (2 * a);
