@@ -22,8 +22,8 @@ public class ArrayRataNilai22 {
         }
         rata_nilai_lulus = jumlah_nilai_lulus / lulus;
         rata_nilai_tidak_lulus = (total - jumlah_nilai_lulus) / tidak_lulus;
-        System.out.println("Rata-rata nilai mahasiswa yang lulus = " + rata_nilai_lulus);
-        System.out.println("Rata-rata nilai mahasiswa yang tidak lulus = " + rata_nilai_tidak_lulus);
+        System.out.println("Rata-rata nilai lulus = " + rata_nilai_lulus);
+        System.out.println("Rata-rata nilai tidak lulus = " + rata_nilai_tidak_lulus);
         sc.close();
     }
 }

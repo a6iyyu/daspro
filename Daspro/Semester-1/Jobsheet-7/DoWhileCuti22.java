@@ -14,6 +14,7 @@ public class DoWhileCuti22 {
                     jumlah_hari = sc.nextInt();
                     if (jumlah_hari > jatah_cuti) {
                         System.out.println("Jumlah hari yang Anda inginkan melebihi jatah cuti.");
+                        break;
                     } else {
                         jatah_cuti -= jumlah_hari;
                         System.out.println("Sisa jatah cuti Anda adalah " + jatah_cuti + " hari.");
