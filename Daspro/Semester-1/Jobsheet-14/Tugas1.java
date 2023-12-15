@@ -13,15 +13,14 @@ public class Tugas1 {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Masukkan bilangan awal deret : ");
+        System.out.print("Masukkan bilangan awal deret: ");
         int n = sc.nextInt();
-
         System.out.println("Deret Descending Rekursif: ");
         deret_rekursif(n);
         System.out.println();
         System.out.println("Deret Descending Iteratif: ");
         deret_iteratif(n);
-
+        System.out.println();
         sc.close();
     }
 }

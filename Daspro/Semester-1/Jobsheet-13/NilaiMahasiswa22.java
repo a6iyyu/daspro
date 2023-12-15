@@ -1,25 +1,24 @@
 import java.util.Scanner;
-public class TugasNo2_22 {
+public class NilaiMahasiswa22 {
     static Scanner sc = new Scanner(System.in);
-    static String[] namaMhswa = { "Sari", "Rina", "Yani", "Dwi", "Lusi" };
-    static double[][] nilaiMhswa = new double[5][7];
-    static void inputNilai() {
+    static String[] nama_mahasiswa = { "Sari", "Rina", "Yani", "Dwi", "Lusi" };
+    static double[][] nilai_mahasiswa = new double[5][7];
+    static void input_nilai() {
         for (int i = 0; i < 5; i++) {
-            System.out.println("Masukkan nilai Mahasiswa atas nama " + namaMhswa[i]);
+            System.out.println("Masukkan nilai Mahasiswa atas nama " + nama_mahasiswa[i]);
             for (int j = 0; j < 7; j++) {
-                System.out.print("Minggu ke-" + (j + 1) + " : ");
-                nilaiMhswa[i][j] = sc.nextDouble();
+                System.out.print("Minggu ke-" + (j + 1) + ": ");
+                nilai_mahasiswa[i][j] = sc.nextDouble();
             }
         }
     }
-    static void dataNilaiMhswa() {
+    static void data_nilai_mahasiswa() {
         System.out.println("Nilai Tugas Lima Mahasiswa dari Minggu 1 hingga 7 berturut-turut :");
         for (int i = 0; i < 5; i++) {
-            System.out.print("Mahasiswa " + namaMhswa[i] + "\t: ");
+            System.out.print("Mahasiswa " + nama_mahasiswa[i] + "\t: ");
             for (int j = 0; j < 7; j++) {
-                System.out.print(nilaiMhswa[i][j] + ", ");
-            }
-            System.out.println();
+                System.out.print(nilai_mahasiswa[i][j] + ", ");
+            } System.out.println();
         }
     }
     static int mingguTertinggi() {
@@ -28,19 +27,18 @@ public class TugasNo2_22 {
         for (int j = 0; j < 7; j++) {
             double totalNilaiMinggu = 0;
             for (int i = 0; i < 5; i++) {
-                totalNilaiMinggu += nilaiMhswa[i][j];
+                totalNilaiMinggu += nilai_mahasiswa[i][j];
             }
             if (totalNilaiMinggu > nilaiTertinggi) {
                 nilaiTertinggi = totalNilaiMinggu;
                 MingguTertinggi = j;
             }
-        }
-        return MingguTertinggi;
+        } return MingguTertinggi;
     }
     public static void main(String[] args) {
-        inputNilai();
+        input_nilai();
         System.out.println();
-        dataNilaiMhswa();
+        data_nilai_mahasiswa();
         printNilaiTertinggiMhswa();
     }
     static void printNilaiTertinggiMhswa() {
@@ -49,15 +47,14 @@ public class TugasNo2_22 {
         int Minggu = 0;
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 7; j++) {
-                if (nilaiMhswa[i][j] > nilaiTertinggi) {
-                    nilaiTertinggi = nilaiMhswa[i][j];
+                if (nilai_mahasiswa[i][j] > nilaiTertinggi) {
+                    nilaiTertinggi = nilai_mahasiswa[i][j];
                     Mhswa = i;
                     Minggu = j;
                 }
             }
         }
-        System.out.println("\nNilai tertinggi diperoleh mahasiswa atas nama " + namaMhswa[Mhswa]);
-        System.out
-                .println("Nilai tertinggi terdapat pada minggu ke-" + (Minggu + 1) + " dengan nilai " + nilaiTertinggi);
+        System.out.println("\nNilai tertinggi diperoleh mahasiswa atas nama " + nama_mahasiswa[Mhswa]);
+        System.out.println("Nilai tertinggi terdapat pada minggu ke-" + (Minggu + 1) + " dengan nilai " + nilaiTertinggi);
     }
 }

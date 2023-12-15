@@ -13,15 +13,13 @@ public class Tugas3 {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Masukkan Bilangan anda : ");
+        System.out.print("Masukkan Bilangan: ");
         int bilangan = sc.nextInt();
-
-        boolean cekPrima = prima_rekursif(bilangan, bilangan / 2);
-        if (cekPrima) {
+        boolean cek_prima = prima_rekursif(bilangan, bilangan / 2);
+        if (cek_prima) {
             System.out.println(bilangan + " adalah bilangan prima.");
         } else {
             System.out.println(bilangan + " bukan bilangan prima.");
-        }
-        sc.close();
+        } sc.close();
     }
 }

@@ -12,12 +12,10 @@ public class Tugas2 {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Masukkan angka batas akhir penjumlahan : ");
+        System.out.print("Masukkan angka batas akhir penjumlahan: ");
         int angka = sc.nextInt();
-
         int output = penjumlahan_rekursif(angka);
         System.out.println(" = " + output);
-
         sc.close();
     }
 }

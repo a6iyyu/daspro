@@ -1,11 +1,10 @@
-public class Percobaan5_22 {
+public class Percobaan522 {
     static void Tampil(String str, int... a) {
         System.out.println("String: " + str);
         System.out.println("Jumlah argumen atau parameter: " + a.length);
-        for (int i : a) {
+        for (int i: a) {
             System.out.print(i + " ");
-        }
-        System.out.println();
+        } System.out.println();
     }
     public static void main(String[] args) {
         Tampil("Daspro 2019", 100, 200);

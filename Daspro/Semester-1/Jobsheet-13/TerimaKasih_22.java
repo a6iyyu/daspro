@@ -1,14 +1,14 @@
 public class TerimaKasih_22 {
-    static void ucapanTerimaKasih() {
+    public static void ucapan_terima_kasih() {
         System.out.println("Thank you for being best teacher in the world.\n"
-                + "You inspired in me a love for learning and made me feel like i could ask you anithing.");
+                + "You inspired in me a love for learning and made me feel like I could ask you anithing.");
     }
-    public static void UcapanTambahan(String ucapan) {
+    public static void ucapan_tambahan(String ucapan) {
         System.out.println(ucapan);
     }
-    public static void main(String[] args) throws Exception {
-        ucapanTerimaKasih();
+    public static void main(String[] args) {
+        ucapan_terima_kasih();
         String ucapan = "Terima Kasih Pak... Bu... Semoga sehat selalu";
-        UcapanTambahan(ucapan);
+        ucapan_tambahan(ucapan);
     }
 }
