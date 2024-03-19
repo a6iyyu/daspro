@@ -7,7 +7,6 @@ public class Buku22 {
         System.out.println("Jumlah halaman: " + halaman);
         System.out.println("Sisa stok: " + stok);
         System.out.println("Harga: Rp " + harga);
-
     }
     void Terjual(int jml) {
         if (stok > 0) {
@@ -45,6 +44,6 @@ public class Buku22 {
         halaman = hal;
         this.stok = stok;
         harga = har;
-        
     }
+    public Buku22() {};
 }
